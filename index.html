@@ -67,10 +67,26 @@
             background-color: #eee; /* Fond de secours */
             border-radius: 8px;
         }
+         .photo-container1 {
+            position: relative;
+            width: 100px;
+            min-width: 90px; /* Empêche le rétrécissement */
+            height: 90px;
+            background-color: #eee; /* Fond de secours */
+            border-radius: 8px;
+        }
 
         .photo-container img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            display: block; /* Important pour l'affichage mobile */
+        }
+         .photo-container1 img {
+            width: 100px;
+            height: 90px;
             object-fit: cover;
             border-radius: 8px;
             border: 1px solid #ddd;
@@ -244,7 +260,10 @@
                     <span class="badge-item"><strong style="color:#1d70b8">Nationality:</strong> SEN</span>
                     <span class="badge-item"><strong style="color:#1d70b8">Status:</strong> Skilled <span class="status-active">Active</span></span>
                 </div>
-            
+            <div class="photo-container1">
+                <img src="qrcode_raw.githubusercontent.com.png" width="150px" alt="détails">
+            <div class="evisa-tag"></div>
+           </div>
             </div>
         </div>
 
@@ -274,10 +293,7 @@
     </div>
 
     <div class="copyright">© UK Visas and Immigration</div>
-    <div class="photo-container">
-                <img src="qrcode_raw.githubusercontent.com.png" width="150px" alt="détails">
-            <div class="evisa-tag"></div>
-    </div>
+    
 
 </body>
 </html>

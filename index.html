@@ -68,13 +68,12 @@
             border-radius: 8px;
         }
          .photo-container1 {
-            position: relative;
-            width: 100px;
-            min-width: 90px; /* Empêche le rétrécissement */
-            height: 90px;
-            background-color: #eee; /* Fond de secours */
-            border-radius: 8px;
-        }
+              margin-left: auto; /* Pousse le conteneur complètement à droite */
+              width: 100px; /* Conserve sa largeur propre */
+              display: flex;
+              flex-direction: column;
+              align-items: center; /* Centre l'image et le texte "Détails" au sein du bloc */
+            }
 
         .photo-container img {
             width: 100%;
@@ -260,10 +259,10 @@
                     <span class="badge-item"><strong style="color:#1d70b8">Nationality:</strong> SEN</span>
                     <span class="badge-item"><strong style="color:#1d70b8">Status:</strong> Skilled <span class="status-active">Active</span></span>
                 </div>
-            <div class="photo-container1" align="right">
-                <img src="qrcode_raw.githubusercontent.com.png" width="150px" alt="détails">
-            <div class="evisa-tag"></div>Détails
-           </div>
+            <div class="photo-container1">
+  <img src="qrcode_raw.githubusercontent.com.png" alt="détails">
+  <div class="evisa-tag">Détails</div>
+</div>
             </div>
         </div>
 
